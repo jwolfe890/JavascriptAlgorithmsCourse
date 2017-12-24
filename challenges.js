@@ -7,4 +7,19 @@ function fizzBuzz(num) {
     }      
 }
 
+array2 = ["fiddleheads","okra","kohlrabi"]
+
+function oxford(array) { 
+    return array.map(function(item) {
+        if (item == array[array.length - 2]) {
+            return `${item}, and`       
+        } else if (item == array[array.length -1]) {
+            return item
+        }  else {
+          return item + ","
+        }
+    }).join(" ")
+}
+
+
 
