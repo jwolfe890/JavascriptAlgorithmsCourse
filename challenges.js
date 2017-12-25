@@ -7,7 +7,6 @@ function fizzBuzz(num) {
     }      
 }
 
-
 function oxford(array) { 
     return array.map(function(item) {
         if (item == array[array.length - 2]) {
@@ -19,10 +18,11 @@ function oxford(array) {
         }
     }).join(" ")
 }
-array2[array2 - 2]), 
 
 array2 = ["fiddleheads","okra","kohlrabi"]
 
 console.log(array2.splice(0, array2.length -1).join(", ") + ", and" + " " + array2[array2.length -1])
+
+
 
 
