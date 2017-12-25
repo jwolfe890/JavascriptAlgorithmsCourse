@@ -14,5 +14,25 @@ def number_of_arithmetic_slices(a)
     else
         (1..(a.length-2)).reduxe(:+)
     end
-
 end 
+
+def duplicate_count(text)
+    if text == ""
+        0
+    else 
+      newHash = Hash.new(0)
+      text.split("").each { |letter|
+        newHash[letter.downcase] += 1
+      }
+       counter = 0
+     newHash.each do |key, value|
+       if value > 1
+         counter +=1
+         puts counter
+       end 
+     end
+       counter
+    end
+ end
+
+
